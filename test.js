@@ -12,12 +12,11 @@
 	┳━┳ ノ( ゜-゜ノ)
 		     (ヘ･_･)ヘ┳━┳*/
 
-<<<<<<< HEAD
+
 
 while(true){
-    console.log("Good morning :D HIII")
+    console.log("Good morning :D HIII Its sebastian")
 };
-=======
 /* Fedor was here
 --------------..........------------
 */
