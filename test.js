@@ -25,7 +25,7 @@ board[2][1] = '*';
 board[3][1] = '*';
 board[4][2] = '*';
 board[4][3] = '*';
-board[4] = '*';
+board[4][4] = '*';
 let numberOfShips = 6;
 let x;
 let	y; // Variables for coordinates
