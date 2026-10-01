@@ -60,8 +60,4 @@ process.stdin.on("data", function(inputFromUser){
         process.stdout.write("All ships sunk! You needed " + shots + " shots.\n\n\n");
     }
     process.exit();
-}
-
-                
-
-                
+});
