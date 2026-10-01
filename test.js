@@ -28,7 +28,7 @@ board[2][1] = "*";
 board[3][1] = '*';
 board[4][2] = '*';
 board[4][3] = '*';
-board[4][4] = '*';
+board[4][4] = '*'; // WHAT's WRONG HERE??
 let numberOfShips = 6;
 let x,y; // Variables for coordinates
 let bodyCount = 0; // Variable for sunk ships
@@ -55,13 +55,12 @@ process.stdin.on("data", function(inputFromUser){
             process.stdout.write("Miss!\n");
         }
         shots++; // Let's increase the number of shots
-        shots++; // Let's increase the number of shots
     }
     if (bodyCount < numberOfShips) { // Loop for as long as there are ships to sink
         process.stdout.write("Enter x and y coordinates separated by space: ");
     } else {
         process.stdout.write("All ships sunk! You needed " + shots + " shots.\n\n\n");
-		process.exit();
+        process.exit();
     }
-    
+
 });
