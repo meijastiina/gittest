@@ -41,7 +41,6 @@ process.stdin.on("data", function(inputFromUser){
     let userInput = inputFromUser.toString().trim().split(" ");
     let x = Number(userInput[0]);
     let y = Number(userInput[1]);
-    let y = Number(userInput[1]);
 
     // Check whether shot is within range
     if (x > BOARD_SIZE - 1 || y > BOARD_SIZE - 1 ) {
