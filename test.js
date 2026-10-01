@@ -1,9 +1,4 @@
 /* This is a test */
-/*Moikka! Mitä kuuluu?   - Emilija*/
-<<<<<<< HEAD
-
-
-
 
 
 =======
@@ -22,3 +17,5 @@ while(true){
 /* Fedor was here
 --------------..........------------
 */
+
+/*A line about something important that i forgot is important*/
