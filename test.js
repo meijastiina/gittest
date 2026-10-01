@@ -60,12 +60,6 @@ process.stdin.on("data", function(inputFromUser){
         process.stdout.write("Enter x and y coordinates separated by space: ");
     } else {
         process.stdout.write("All ships sunk! You needed " + shots + " shots.\n\n\n");
-		process.exit();
     }
-<<<<<<< HEAD
     process.exit();
-});  
-=======
-    
 });
->>>>>>> 98ad6f6dc59a84d94442ab5193a27b5d5c5b3093
