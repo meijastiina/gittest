@@ -28,7 +28,7 @@ board[2][1] = "*";
 board[3][1] = '*';
 board[4][2] = '*';
 board[4][3] = '*';
-board[4][4] = '*'; // WHAT's WRONG HERE??
+board[4][4] = '*';
 let numberOfShips = 6;
 let x,y; // Variables for coordinates
 let bodyCount = 0; // Variable for sunk ships
@@ -62,10 +62,5 @@ process.stdin.on("data", function(inputFromUser){
         process.stdout.write("All ships sunk! You needed " + shots + " shots.\n\n\n");
 		process.exit();
     }
-<<<<<<< HEAD
-    process.exit();
-});  
-=======
     
 });
->>>>>>> 98ad6f6dc59a84d94442ab5193a27b5d5c5b3093
