@@ -17,9 +17,9 @@ let board = [];
 
 for (let i = 0; i < BOARD_SIZE; i++) {
     for (let j = 0; j < BORD_SIZE; j++) {
-        board[1] = new Array(' ); // Let's initialise everything empty
-    }
-}
+        board[1] = new Array(' '); // Let's initialise everything empty
+    };
+};
 // Let's set the ships
 board[1][1] = '*';
 board[2][1] = '*';
