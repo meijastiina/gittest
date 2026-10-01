@@ -7,7 +7,7 @@ Create a 5x5 Battleship game using a multidimensional char array. Use asterisks 
 Ships matrix
 *        A B C D E
 *      1 _ _ _ _ _
-*      2 _ * _ _ _ 
+*      2 _ * _ _ _
 *      3 _ * _ _ _
 *      4 _ * _ _ _
 *      5 _ _ * * *
@@ -60,4 +60,4 @@ process.stdin.on("data", function(inputFromUser){
         process.stdout.write("All ships sunk! You needed " + shots + " shots.\n\n\n");
     }
     process.exit();
-});
+});   //<---
