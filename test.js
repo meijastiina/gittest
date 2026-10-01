@@ -2,12 +2,11 @@
 Task 6: Battleship
 
 Create a 5x5 Battleship game using a multidimensional char array. Use asterisks to mark the ships. In a loop ask the user for coordinates to shoot in and give feedback to the user whether they hit a ship or not. If you want you can create a bigger array and add bigger ships. Keep count of how many shots the player needed.
->>>>>>> c3cf78a98058cfd7b8c6290c8fc816d84d5927dc
 
 Ships matrix
 *        A B C D E
 *      1 _ _ _ _ _
-*      2 _ * _ _ _ 
+*      2 _ * _ _ _
 *      3 _ * _ _ _
 *      4 _ * _ _ _
 *      5 _ _ * * *
@@ -42,9 +41,11 @@ process.stdin.on("data", function(inputFromUser){
     let userInput = inputFromUser.toString().trim().split(" ");
     let x = Number(userInput[0]);
     let y = Number(userInput[1]);
+    let y = Number(userInput[1]);
 
     // Check whether shot is within range
     if (x > BOARD_SIZE - 1 || y > BOARD_SIZE - 1 ) {
+        process.stdout.write("Input out of range. Please enter valid coordinates.");
         process.stdout.write("Input out of range. Please enter valid coordinates.");
     } else {
         if( board[x][y] == '*' ) {
@@ -55,6 +56,7 @@ process.stdin.on("data", function(inputFromUser){
             process.stdout.write("Miss!\n");
         }
         shots++; // Let's increase the number of shots
+        shots++; // Let's increase the number of shots
     }
     if (bodyCount < numberOfShips) { // Loop for as long as there are ships to sink
         process.stdout.write("Enter x and y coordinates separated by space: ");
@@ -64,7 +66,3 @@ process.stdin.on("data", function(inputFromUser){
     }
     
 });
-
-                
-
-                
