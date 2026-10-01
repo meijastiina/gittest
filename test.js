@@ -38,11 +38,11 @@ process.stout.write("\n\nEnter x and y coordinates separated by space: ");
 process.stdin.on("data", function(inputFromUser){
     let userInput = inputFromUser.toString().trim().split(" ");
     let x = Number(userInput[0]);
-    let y Number(userInput[1]);
+    let y = Number(userInput[1]);
 
     // Check whether shot is within range
     if (x > BOARD_SIZE - 1 || y > BOARD_SIZE - 1 ) {
-        process.stdout.write("Input out of range. Please enter valid coordinates.);
+        process.stdout.write("Input out of range. Please enter valid coordinates.");
     } else {
         if( board[x][y] == '*' ) {
             process.stdout.write("You hit a ship!\n");
@@ -51,7 +51,7 @@ process.stdin.on("data", function(inputFromUser){
         } else {
             process.stdout.write("Miss!\n");
         }
-        shots+; // Let's increase the number of shots
+        shots++; // Let's increase the number of shots
     }
 
     if (bodyCount < numberOfShips) { // Loop for as long as there are ships to sink
