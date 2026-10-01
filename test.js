@@ -1,12 +1,6 @@
 /* This is a test */
 
 
-
-
-
-
-
-
 /*Maksud was here!!!
 	┻━┻ ︵ ＼( °□° )／ ︵ ┻━┻
 	┳━┳ ノ( ゜-゜ノ)
