@@ -28,7 +28,7 @@ board[4][2] = '*';
 board[4][3] = '*';
 board[4] = '*';
 let numberOfShips = 6;
-let x y; // Variables for coordinates
+let [x, y]; // Variables for coordinates
 let bodyCount = 0; // Variable for sunk ships
 let shots = 0;
 
@@ -60,8 +60,4 @@ process.stdin.on("data", function(inputFromUser){
         process.stdout.write("All ships sunk! You needed " + shots + " shots.\n\n\n");
     }
     process.exit();
-}
-
-                
-
-                
+});
