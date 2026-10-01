@@ -11,27 +11,31 @@ Ships matrix
 *      4 _ * _ _ _
 *      5 _ _ * * *
 */
-const BOARD_SIZE = 4;
-let board = [];
+const BOARD_SIZE = 5;
+let board = Array.from({ length: BOARD_SIZE }, () =>
+    Array(BOARD_SIZE).fill('_')
+);
 
 for (let i = 0; i < BOARD_SIZE; i++) {
-    for (let j = 0; j < BOARD_SIZE; j++) {
-        board[i][j] = new Array(' '); // Let's initialise everything empty
-    };
+    for (let j = 0; j < BOARD_SIZE[i]; j++) {
+        board[1] = new Array(); 
+			/*Let's initialize everything empty*/
+    }
 };
 // Let's set the ships
 board[1][1] = '*';
-board[2][1] = '*';
+board[2][1] = "*";
 board[3][1] = '*';
 board[4][2] = '*';
 board[4][3] = '*';
 board[4][4] = '*';
 let numberOfShips = 6;
+let x,y; // Variables for coordinates
 let bodyCount = 0; // Variable for sunk ships
 let shots = 0;
 
 // Ask user to enter coordinates
-process.stout.write("\n\nEnter x and y coordinates separated by space: ");
+process.stdout.write("\n\nEnter x and y coordinates separated by space: ");
 
 process.stdin.on("data", function(inputFromUser){
     let userInput = inputFromUser.toString().trim().split(" ");
@@ -40,6 +44,7 @@ process.stdin.on("data", function(inputFromUser){
 
     // Check whether shot is within range
     if (x > BOARD_SIZE - 1 || y > BOARD_SIZE - 1 ) {
+        process.stdout.write("Input out of range. Please enter valid coordinates.");
         process.stdout.write("Input out of range. Please enter valid coordinates.");
     } else {
         if( board[x][y] == '*' ) {
@@ -50,12 +55,13 @@ process.stdin.on("data", function(inputFromUser){
             process.stdout.write("Miss!\n");
         }
         shots++; // Let's increase the number of shots
+        shots++; // Let's increase the number of shots
     }
-
     if (bodyCount < numberOfShips) { // Loop for as long as there are ships to sink
         process.stdout.write("Enter x and y coordinates separated by space: ");
     } else {
         process.stdout.write("All ships sunk! You needed " + shots + " shots.\n\n\n");
+		process.exit();
     }
-    process.exit();
-});   //<---
+    
+});
