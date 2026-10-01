@@ -15,7 +15,7 @@ const BOARD_SIZE = 4;
 let board = [];
 
 for (let i = 0; i < BOARD_SIZE; i++) {
-    for (let j = 0; j < BORD_SIZE; j++) {
+    for (let j = 0; j < BOARD_SIZE; j++) {
         board[1] = new Array(' '); // Let's initialise everything empty
     };
 };
@@ -25,7 +25,7 @@ board[2][1] = '*';
 board[3][1] = '*';
 board[4][2] = '*';
 board[4][3] = '*';
-board[4] = '*';
+board[4][4] = '*';
 let numberOfShips = 6;
 let bodyCount = 0; // Variable for sunk ships
 let shots = 0;
