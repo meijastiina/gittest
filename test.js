@@ -51,7 +51,7 @@ process.stdin.on("data", function(inputFromUser){
         } else {
             process.stdout.write("Miss!\n");
         }
-        shots+; // Let's increase the number of shots
+        shots++; // Let's increase the number of shots
     }
 
     if (bodyCount < numberOfShips) { // Loop for as long as there are ships to sink
