@@ -2,6 +2,7 @@
 Task 6: Battleship
 
 Create a 5x5 Battleship game using a multidimensional char array. Use asterisks to mark the ships. In a loop ask the user for coordinates to shoot in and give feedback to the user whether they hit a ship or not. If you want you can create a bigger array and add bigger ships. Keep count of how many shots the player needed.
+>>>>>>> c3cf78a98058cfd7b8c6290c8fc816d84d5927dc
 
 Ships matrix
 *        A B C D E
