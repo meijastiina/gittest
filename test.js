@@ -16,7 +16,7 @@ let board = [];
 
 for (let i = 0; i < BOARD_SIZE; i++) {
     for (let j = 0; j < BOARD_SIZE; j++) {
-        board[1] = new Array(' '); // Let's initialise everything empty
+        board[i][j] = new Array(' '); // Let's initialise everything empty
     };
 };
 // Let's set the ships
