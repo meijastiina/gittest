@@ -42,7 +42,7 @@ process.stdin.on("data", function(inputFromUser){
 
     // Check whether shot is within range
     if (x > BOARD_SIZE - 1 || y > BOARD_SIZE - 1 ) {
-        process.stdout.write("Input out of range. Please enter valid coordinates.);
+        process.stdout.write("Input out of range. Please enter valid coordinates.");
     } else {
         if( board[x][y] == '*' ) {
             process.stdout.write("You hit a ship!\n");
