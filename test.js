@@ -55,7 +55,6 @@ process.stdin.on("data", function(inputFromUser){
             process.stdout.write("Miss!\n");
         }
         shots++; // Let's increase the number of shots
-        shots++; // Let's increase the number of shots
     }
     if (bodyCount < numberOfShips) { // Loop for as long as there are ships to sink
         process.stdout.write("Enter x and y coordinates separated by space: ");
